@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inscripción en línea</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="css/inscripcion.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="body">
+		<nav>
+            <div class="logo">
+                <img alt="Martial arts logo" id="imglogo" src="img/martial.jpg">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            	<li><a href="#">El club</a></li>
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Torneo</a></li>
+                <li><a class="activo" href="#">Inscripción en línea</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </nav> 
+		<article>
+			<p>
+				Respete los tipos de datos a ser ingresados, de lo contrario el formulario no le permitirá proseguir. Estos datos son de caracter estrictamente clasificado, y serán solamente para facilitar el registro de los estudiantes en la academia.
+			</p>
+		</article>
+		<form action="" method="post">
+			<h1>- Inscribete -</h1>
+			<fieldset>
+				<legend>Datos generales</legend>
+				<label>Nombres: </label><br>
+				<input type="text" name="Nombre" placeholder="Escriba sus nombres" required pattern="[a-zA-Z]{3,}\s[a-zA-Z]{3,}" title="Sus 2 nombres, solo letras" class="info" autocomplete="off"><br>
+				<label>Apellidos: </label><br>
+				<input type="text" name="Apellidos" placeholder="Escriba sus apellidos" required pattern="[a-zA-Zñ]{3,}\s[a-zA-Zñ]{3,}" title="Sus 2 apellidos, solo letras" class="info" autocomplete="off"><br>
+				<label>Fecha de nacimiento: </label><br>
+				<input type="date" name="fecha_nac" required id="nacimiento" autocomplete="off"><br>
+				<label>Edad: </label><br>
+				<input type="number" name="edad" placeholder="edad" min="3" step="1" required id="edad" autocomplete="off"><br>
+				<label>Género: </label><br>
+				<input type="radio" name="genero" value="Masculino" required>
+				<label class="negro">Masculino</label>
+				<input type="radio" name="genero" value="Femenino" required>
+				<label class="negro">Femenino</label><br>
+				<label>Correo: </label>
+				<input type="email" name="correo" required placeholder="Ingrese su correo electrónico" class="info" autocomplete="off"><br>
+				<label>Departamento: </label><br>
+				<select name="Departamento" required class="info" autocomplete="off">
+					<option selected>San Salvador</option>
+					<option>San Miguel</option>
+					<option>Sonsonate</option>
+					<option>La Libertad</option>
+					<option>Cabañas</option>
+					<option>Ahuachapan</option>
+					<option>La Unión</option>
+					<option>San Vicente</option>
+					<option>Chalatenango</option>
+					<option>Morazán</option>
+					<option>Santa Ana</option>
+					<option>Usulután</option>
+					<option>Cuscatlán</option>
+					<option>La Paz</option>
+				</select><br>
+				<label>Domicilio: </label><br>
+				<textarea name="Domicilio" required placeholder="Ingrese su Domicilio" rows="4" class="info" autocomplete="off">
+				</textarea><br>
+				<input type="submit" name="registrarse" value="Registrarse" id="enviar">
+			</fieldset>
+		</form>
+	</div>
+</body>
+<footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>2222-5555</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>martialarts@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>El Salvador</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Martial Arts | Todos los derechos reservados | Diseñado por Francisco Segura y Francisco Solano</h2>
+</footer>
+</html>

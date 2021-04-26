@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+
+}
+#imglogo{
+    width: 100px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+/* Menu */
+nav{
+  background: #fff;
+  height: 80px;
+  width: 100%;
+  max-width: 100%;
+  z-index: 2;
+  position: absolute;
+  padding-right: 5%;
+  display: flex;
+ justify-content: center;
+}
+nav ul{
+
+list-style-type: none;
+margin-right: 0px;
+}
+nav ul li{
+position: relative;
+display: inline-block;
+font-weight: 400px;
+line-height: 79px;    
+}
+nav ul li ul {
+  display: none;
+  margin-top: 10%;
+}
+nav ul li a{
+color: #121317;
+font-weight: 500;
+font-size: 20px;
+padding: 7px 13px;
+border-radius: 3px;
+/* text-transform: uppercase; */
+font-family: 'Poppins', sans-serif;
+}
+.menu ul li:hover {
+  cursor: pointer;
+  background-color: #fff;
+} 
+nav ul li:hover ul {
+  display: block;
+  margin-top: 0px;
+  width: 200px;
+  left: 0;
+  position: absolute;
+}
+nav ul li:hover ul li {
+  display: block;
+  background-color: #fff;
+  width: 75%;
+  text-align: center;
+}
+/*nav ul li:hover ul li:hover {
+  background-color: #000000;
+}*/
+a:hover{
+background: #eb2020d0;
+transition: .5s;
+}
+.checkbtn{
+position: fixed;
+margin-left: 89%;
+font-size: 30px;
+color:#121317;
+float: right;
+line-height: 80px;
+cursor: pointer;
+display: none;
+}
+#check{
+  display: none;
+}
+.activo{
+  background: #eb2020d0;
+
+}
+
+@media (max-width: 1600px){
+    #logoimg{
+        width: 250px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    nav ul{
+        margin-right: 0px;
+      }
+}
+@media (max-width: 1080px){
+    #logoimg{
+        width: 220px;
+        margin-left: 10px;
+        margin-top: 1%;
+    }
+}
+@media (max-width: 1060px){
+    #logoimg{
+        width: 205px;
+        margin-left: 10px;
+        margin-top: 1%;
+        position: absolute;
+    }
+    nav ul{
+        margin-right: 40px;
+      }
+}
+@media (max-width: 1024px){
+    nav > ul{
+     margin-right: 50px;
+  }
+}
+@media (max-width: 998px){
+    #logoimg{
+        width: 205px;
+        margin-left: 10px;
+        margin-top: 2%;
+    }
+    nav ul{
+        margin-right: 20px;
+      }
+      nav ul li a{
+        font-weight: 400;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        /* text-transform: uppercase; */
+        font-family: 'Poppins', sans-serif;
+      }
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 30px;
+    position: absolute;
+  }
+  nav > ul{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background: #06111C;
+    top: 100%;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #BEC7C7;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #BEC7C7;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+@media (max-width: 768px){
+    nav > ul{
+      position: relative;
+      left: -105%; 
+      z-index: 2;
+    }
+    nav ul li{
+      margin: 70px 0;
+      line-height: 30px;
+      
+    }
+    nav ul li a{
+      font-size: 30px;
+     
+    }
+
+    #check:checked ~ ul{
+      left: -2;
+    }
+  }
+  
+  @media (max-width: 498px){
+    #logoimg{
+        width: 250px;
+        right: 48%;
+        top: 0;
+    }
+    nav ul{
+        margin-right: 20px;
+      }
+      .checkbtn{
+        margin-right: 5%;
+        top: 0;
+        position: absolute;
+      }
+      nav > ul{
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        left: -100%;
+      }
+      nav ul li a{
+        font-size: 25px;
+      }
+      nav ul li{
+        margin: 30px 0;
+        line-height: 30px;
+        
+      }
+
+}
+  @media (max-width: 411px){
+    nav ul li{
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 18px;
+     
+    }
+    a:hover,a.active{
+      background: none;
+      
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .checkbtn{
+        margin-left: 84%;
+        font-size: 30px;
+      }
+    }
+
+@media (max-width: 360px){
+  #logoimg{
+    width: 200px;
+    right: 40%;
+    top: 5px;
+}
+nav ul li{
+  margin: 10px 0;
+  line-height: 5px;
+  
+}
+nav ul li a{
+  font-size: 16px;
+  color: #CFA76E;
+}
+    a:hover,a.active{
+      background: none;
+      color: #8C4507;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .checkbtn{
+        margin-left: 84%;
+        font-size: 30px;
+      }
+      nav > ul{
+        position: relative;
+        left: -100%; 
+        top: 100%;
+      }
+          nav ul li{
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 18px;
+      color: #CFA76E;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #8C4507;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .checkbtn{
+        margin-left: 84%;
+        font-size: 30px;
+      }
+      nav > ul{
+        position: relative;
+        left: -100%; 
+        z-index: 2;
+      }
+  }
+  @media (max-width: 320px){
+    .checkbtn{
+        margin-left: 84%;
+        font-size: 30px;
+      }
+      #logoimg{
+        width: 200px;
+        margin-left: 10px;
+        margin-top: 3%;
+    }
+      nav > ul{
+        position: relative;
+        left: -100%; 
+        z-index: 2;
+      }
+          nav ul li{
+      margin: 35px 0;
+      padding-left: 10%;
+      line-height: 30px;
+      width: 100%;
+      height: 40px;
+    }
+    nav ul li a{
+      font-size: 12px;
+      color: #CFA76E;
+    }
+  }
+  
+  

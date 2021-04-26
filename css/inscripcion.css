@@ -1,0 +1,118 @@
+*{
+	font-family: sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+form{
+	width: 50vw;
+	margin: 12vh 5vw;
+	display: inline-block;
+}
+article{
+	width: 27vw;
+	display: inline-block;
+	float: left;
+	margin-left: 8vw;
+}
+article p{
+	margin-top: 20vh;
+	text-align: justify;
+	font-weight: bold;
+}
+form h1{
+	color: rgb(233, 216, 83);
+	margin-top: 1vh;
+}
+.info{
+	width: 98%;
+}
+.info, #edad, #nacimiento{
+	height: 4vh;
+	padding-left: 1%;
+	padding-right: 3%;
+
+} 
+input, select, textarea{
+	margin: 1% 0%; 
+	border: #121317 solid 2px;
+}
+#edad{
+	width: 20%;
+}
+
+fieldset{
+	border-color: #B3C7C7;
+	padding-left: 1vw;
+	padding-top: 2vh; 
+	margin-top: 2vh;
+}
+label{
+	color: #BB2020;
+	margin: 1vh 0vw;
+}
+.negro{
+	color: #06111C;
+}
+#enviar{
+	background-color: #06111C;
+	color: white;
+	height: 4vh;
+	border-radius: 2vh;
+	padding: 0.5vh;
+}
+textarea{
+	resize: none;
+}
+/*footer*/
+footer{
+  background: #121317;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #bb2020;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #fff;
+  border-bottom: 3px solid #bb2020;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: #ccc;
+}
+
+.titulo-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #fff;
+}
+/*Decoracion*/
+input:required, select:required, textarea:required{
+	background: url(../img/required.png) no-repeat 97% center;
+	background-size: 2vh;
+}
+input:focus:invalid, select:focus:invalid, textarea:focus:invalid{
+	background: url(../img/incorrecto.png) no-repeat 97% center;
+	background-size: 2vh;
+}
+
+input:focus:valid,  select:focus:valid, textarea:focus:valid{
+	background: url(../img/correcto.png) no-repeat 97% center;
+	background-size: 2vh;
+}

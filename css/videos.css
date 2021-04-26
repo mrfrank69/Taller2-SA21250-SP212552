@@ -1,0 +1,56 @@
+
+.info1{
+  margin-top: 10vh;
+  display: inline-block;
+  width: 38vw;
+  margin-left: 8vw;
+}
+#body{
+  min-height: 100vh; 
+}
+h1{
+  z-index: 5;
+  position: relative;
+  top: 12vh;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+/*footer*/
+footer{
+  background: #121317;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #bb2020;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #fff;
+  border-bottom: 3px solid #bb2020;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: #ccc;
+}
+
+.titulo-final{
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #fff;
+}
